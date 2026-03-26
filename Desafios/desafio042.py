@@ -21,6 +21,6 @@ elif ladoA == ladoB and ladoA == ladoC and ladoB == ladoC and ladoA + ladoB > la
     print(f'{Fore.LIGHTCYAN_EX}Triângulo Isósceles{Fore.RESET}, pois possuem 2 lados iguais')
 elif ladoA != ladoB and ladoC and ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
     print(f'{Fore.LIGHTCYAN_EX}Triângulo Escaleno{Fore.RESET}, pois tem os 3 lados diferentes')
-    sleep(10)
+    
 
 
