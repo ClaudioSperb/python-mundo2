@@ -9,7 +9,7 @@ anosParcela = tempoPrestação / 12
 valorPrestação = valorCasa / tempoPrestação
 validando = valorSalario * (30 / 100)
 salarioValidado = valorSalario - validando
-print(f'O valor a ser financiado é de {valorCasa}.')
+print(f'O valor a ser financiado é de {valorCasa:.2f}.')
 print('_-_' * 30)
 print(f'A quantidade de parcelas serão de {tempoPrestação} vezes - {anosParcela:.2f} anos')
 print('_-_' * 30)
