@@ -1,6 +1,6 @@
 from colorama import Fore
 from time import sleep
-from random import choice
+
 
 valorProduto = float(input('Digite o valor do produto:R$ '))
 aVista = valorProduto - (valorProduto * (10 / 100))
