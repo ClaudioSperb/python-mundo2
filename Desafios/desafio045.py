@@ -27,5 +27,7 @@ elif jogo == 2 and jogoPc == 0:
     print(f'{Fore.LIGHTRED_EX}Você PERDEU, Pedra quebra Tesoura')
 elif jogo == 2 and jogoPc == 1:
     print(f'{Fore.LIGHTGREEN_EX}Você ganhou, Tesoura corta Papel')
-else:
+elif jogo == 2 and jogoPc == 2:
     print(f'{Fore.YELLOW}EMPATE, os dois escolheram Tesoura')
+else:
+    print(f'{Fore.LIGHTRED_EX}[ ERRO ] OPÇÂO INVÁLIDA')
