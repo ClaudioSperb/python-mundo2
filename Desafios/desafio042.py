@@ -8,19 +8,28 @@ print('')
 print('Verificando as medidas ...')
 sleep(1.5)
 print('')
+    #MANDEIRA ANINHADA IF DENTRO DE OUTRO IF
+
 if ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
     print(f'Com os numeros digitados {Fore.LIGHTGREEN_EX}É POSSÍVEL{Fore.RESET} formar um triângulo')
+    if ladoA == ladoB == ladoC:
+        print(f'{Fore.LIGHTCYAN_EX}Triângulo Equilatero{Fore.RESET}, pois todos os Lados são iguais')
+    elif ladoA != ladoB != ladoC != ladoA:
+        print(f'{Fore.LIGHTCYAN_EX}Triângulo Escaleno{Fore.RESET}, pois tem os 3 lados diferentes')
+    else:
+        print(f'{Fore.LIGHTCYAN_EX}Triângulo Isósceles{Fore.RESET}, pois possuem 2 lados iguais')
 else:
     print(f'Com os numeros digitados, {Fore.LIGHTRED_EX}NÃO È POSSIVEL{Fore.RESET} formar um triângulo')
 
 print('_--_' * 10)
 
-if ladoA == ladoB == ladoC and ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
+#PRIMEIRA MANDEIRA QUE FIZ
+'''if ladoA == ladoB == ladoC and ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
     print(f'{Fore.LIGHTCYAN_EX}Triângulo Equilatero{Fore.RESET}, pois todos os Lados são iguais')
 elif ladoA == ladoB and ladoA == ladoC and ladoB == ladoC and ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
     print(f'{Fore.LIGHTCYAN_EX}Triângulo Isósceles{Fore.RESET}, pois possuem 2 lados iguais')
 elif ladoA != ladoB and ladoC and ladoA + ladoB > ladoC and ladoA + ladoC > ladoB and ladoB + ladoC > ladoA:
-    print(f'{Fore.LIGHTCYAN_EX}Triângulo Escaleno{Fore.RESET}, pois tem os 3 lados diferentes')
+    print(f'{Fore.LIGHTCYAN_EX}Triângulo Escaleno{Fore.RESET}, pois tem os 3 lados diferentes')'''
 
 
 
