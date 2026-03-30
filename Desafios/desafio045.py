@@ -1,14 +1,18 @@
 from random import randint
-
 from colorama import Fore
 from time import sleep
 import random
 print('Vamos jogar ? O Jogo será - Pedra , Papel e Tesoura.')
 sleep(1)
 print(f'Escolha - {Fore.LIGHTCYAN_EX}[0] - PEDRA{Fore.RESET}, {Fore.LIGHTBLUE_EX}[1] - PAPEL{Fore.RESET}, {Fore.LIGHTMAGENTA_EX}[2] - TESOURA{Fore.RESET}')
-
 jogo = int(input('Digite o numero da sua escolha: '))
 jogoPc = randint(0, 2)
+print('PEDRA ...')
+sleep(0.5)
+print('PAPEL...')
+sleep(0.5)
+print('TESOURA...')
+sleep(0.5)
 print(f'Voce escolheu {jogo} e o PC escolheu {jogoPc}')
 #print(jogo)
 if jogo == 0 and jogoPc == 0:
