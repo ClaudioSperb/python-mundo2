@@ -1,5 +1,6 @@
 from random import randint
 from colorama import Fore
+from time import sleep
 itens = ('PEDRA', 'PAPEL', 'TESOURA')
 print('======== VAMOS JOGAR ========')
 computador = randint(0, 2)
@@ -10,6 +11,13 @@ print(F'''{Fore.LIGHTGREEN_EX}SUAS OPÇÕES :{Fore.RESET}
 ''')
 jogador = int(input('Qual é a sua escolha: '))
 print('-=' * 10)
+sleep(0.8)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('POOOO !!!')
+print('')
 print(f'O computador escolheu {itens[computador]}')
 print(f'O jogador escolheu {itens[jogador]}')
 print('-=' * 10)
