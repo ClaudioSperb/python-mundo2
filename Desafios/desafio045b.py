@@ -15,30 +15,30 @@ print(f'O jogador escolheu {itens[jogador]}')
 print('-=' * 10)
 if computador == 0: #COMPUTADOR JOGOU PEDRA
     if jogador == 0:
-        print('EMPATE 😶 !!!')
+        print(f'{Fore.LIGHTYELLOW_EX}EMPATE 😶 !!!{Fore.RESET}')
     elif jogador == 1:
-        print('VOCÊ GANHOU 🤩 !!!')
+        print(f'{Fore.LIGHTGREEN_EX}VOCÊ GANHOU 🤩 !!!{Fore.RESET}')
     elif jogador == 2:
-        print('VOCÊ PERDEU 😭 !!!')
+        print(f'{Fore.LIGHTRED_EX}VOCÊ PERDEU 😭 !!!{Fore.RESET}')
     else:
-        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
+        print(f'{Fore.LIGHTRED_EX}OPÇÃO INVÁLIDA ⚠️⚠️⚠️ {Fore.RESET}')
 
 elif computador == 1: #COMPUTADOR JOGOU PAPEL
     if jogador == 0:
-        print('VOCÊ PERDEU 😭 !!! ')
+        print(f'{Fore.LIGHTRED_EX}VOCÊ PERDEU 😭 !!! {Fore.RESET}')
     elif jogador == 1:
-        print('EMPATE 😶 !!!')
+        print(f'{Fore.LIGHTYELLOW_EX}EMPATE 😶 !!!{Fore.RESET}')
     elif jogador == 2:
-        print('VOCÊ GANHOU 🤩 !!!')
+        print(f'{Fore.LIGHTGREEN_EX}VOCÊ GANHOU 🤩 !!!{Fore.RESET}')
     else:
-        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
+        print(f'{Fore.LIGHTRED_EX}OPÇÃO INVÁLIDA ⚠️⚠️⚠️ {Fore.RESET}')
 
 elif computador ==2: #COMPUTADOR JOGOU TESOURA
     if jogador == 0:
-        print('VOCÊ GANHOU 🤩 !!!')
+        print(f'{Fore.LIGHTGREEN_EX}VOCÊ GANHOU 🤩 !!!{Fore.RESET}')
     elif jogador == 1:
-        print('VOCÊ PERDEU 😭 !!!')
+        print(f'{Fore.LIGHTRED_EX}VOCÊ PERDEU 😭 !!!{Fore.RESET}')
     elif jogador == 2:
-        print('EMPATE 😶 !!!')
+        print(f'{Fore.LIGHTYELLOW_EX}EMPATE 😶 !!!{Fore.RESET}')
     else:
-        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
+        print(f'{Fore.LIGHTRED_EX}OPÇÃO INVÁLIDA ⚠️⚠️⚠️ {Fore.RESET}')
