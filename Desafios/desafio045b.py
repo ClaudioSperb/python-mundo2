@@ -20,6 +20,8 @@ if computador == 0: #COMPUTADOR JOGOU PEDRA
         print('VOCÊ GANHOU 🤩 !!!')
     elif jogador == 2:
         print('VOCÊ PERDEU 😭 !!!')
+    else:
+        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
 
 elif computador == 1: #COMPUTADOR JOGOU PAPEL
     if jogador == 0:
@@ -28,6 +30,8 @@ elif computador == 1: #COMPUTADOR JOGOU PAPEL
         print('EMPATE 😶 !!!')
     elif jogador == 2:
         print('VOCÊ GANHOU 🤩 !!!')
+    else:
+        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
 
 elif computador ==2: #COMPUTADOR JOGOU TESOURA
     if jogador == 0:
@@ -36,3 +40,5 @@ elif computador ==2: #COMPUTADOR JOGOU TESOURA
         print('VOCÊ PERDEU 😭 !!!')
     elif jogador == 2:
         print('EMPATE 😶 !!!')
+    else:
+        print('OPÇÃO INVÁLIDA ⚠️⚠️⚠️ ')
