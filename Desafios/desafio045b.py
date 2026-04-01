@@ -5,7 +5,7 @@ itens = ('PEDRA', 'PAPEL', 'TESOURA')
 print('======== VAMOS JOGAR ========')
 computador = randint(0, 2)
 print(F'''{Fore.LIGHTGREEN_EX}SUAS OPÇÕES :{Fore.RESET} 
-{Fore.LIGHTBLUE_EX}[0] - PEDRA 🪨{Fore.RESET}
+{Fore.LIGHTBLUE_EX}[0] - PEDRA ✊🏻{Fore.RESET}
 {Fore.LIGHTCYAN_EX}[1] - PAPEL 🧻{Fore.RESET}
 {Fore.LIGHTRED_EX}[2] - TESOURA ✂️{Fore.RESET}
 ''')
