@@ -8,6 +8,6 @@ if contagem == 0 :
     for i in range(10, 0, -1):
         sleep(1)
         print(i)
-    print(f'{Fore.LIGHTYELLOW_EX}🎆 FELIZ ANO NOVO !!!! 🎆{Fore.RESET} ')
+    print(f'{Fore.LIGHTYELLOW_EX}🎆🧨 FELIZ ANO NOVO !!!! 🧨🎆{Fore.RESET} ')
 else:
     print('CONTAGEM CANCELADA')
