@@ -9,5 +9,5 @@ for c in (frutas):
     print(c)'''
 
 n = int(input('Digite um numero: '))
-for c in range(1, 100 + 1, n):
+for c in range(n , 100 + 1, n):
     print(c)
