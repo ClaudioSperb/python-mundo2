@@ -11,3 +11,4 @@ for c in (frutas):
 n = int(input('Digite um numero: '))
 for c in range(n , 100 + 1, n):
     print(c)
+print('======== FIM DO PROGRAMA =========')
