@@ -8,6 +8,6 @@ for l in range (len(fraseTrasnformada) -1, -1, -1):
     print(fraseTrasnformada[l], end='')
     inverso += fraseTrasnformada[l]
 if inverso == fraseTrasnformada:
-    print(f' É um PILINDROMO')
+    print(f' É um POLINDROMO')
 else:
     print(' Não é um POLINDROMO')
