@@ -7,9 +7,11 @@ sleep(1)
 if n2 < 0:
     for c in range(n1 - n2, 0, n2):
         c += n2
-        print(c)
+        print(c, end=' ')
+    print(' ... >>> ACABOU')
 else:
     for c in range(0, n1, n2):
         c += n2
-        print(c)
+        print(c, end=' ')
+    print('... >>> ACABOU')
 
