@@ -1,5 +1,4 @@
 from time import sleep
-
 from colorama import Fore
 
 print(f'{15 * '='} {Fore.LIGHTGREEN_EX}TABUADA{Fore.RESET} {15 * '='}')
