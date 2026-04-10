@@ -1,3 +1,4 @@
+from colorama import Fore
 maior = 0
 menor = 0
 for p in range(1,6):
@@ -10,5 +11,5 @@ for p in range(1,6):
             maior = peso
         if peso < menor:
             menor = peso
-print(f'O maior peso lido foi {maior}Kg')
-print(f'O menor peso lido foi {menor}Kg')
+print(f'{Fore.LIGHTRED_EX}O maior peso lido foi {maior}Kg{Fore.RESET}')
+print(f'{Fore.LIGHTGREEN_EX}O menor peso lido foi {menor}Kg{Fore.RESET}')
