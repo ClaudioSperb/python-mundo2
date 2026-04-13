@@ -14,4 +14,9 @@ for i in range(0, 3):
     
 matriz = [valores_linha1, valores_linha2, valores_linha3]
 
-print(f'{valores_linha1}\n{valores_linha2}\n{valores_linha3}')
+print("\n--- MATRIZ FORMATADA ---")
+for linha in matriz:
+    print(linha)
+    
+soma = sum(valores_linha1 + valores_linha2 + valores_linha3)
+print(f'O valor total dos valores da matriz é {soma}')
