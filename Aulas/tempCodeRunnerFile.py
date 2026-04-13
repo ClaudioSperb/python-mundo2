@@ -1,1 +1,0 @@
-  print(f'As notas do aluno {nomeAluno} na dis

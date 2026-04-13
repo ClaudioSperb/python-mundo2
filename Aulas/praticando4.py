@@ -7,4 +7,3 @@ for i in range(len(notas)):
     media = sum(notas) / len(notas)
     print(f'As notas do aluno {nomeAluno} na disciplina {disciplinas[i]} é {notas[i]}')
 print(f'A média do aluno foi {media:.2f}')
-    
