@@ -23,6 +23,10 @@ for pessoa in range(0, 3):
     print(f'Seu peso é de {Fore.LIGHTGREEN_EX}{peso}{Fore.RESET} Kg e sua idade é de {Fore.LIGHTGREEN_EX}{idade}{Fore.RESET} anos')
     
 # --- PEGANDO OS DADOS E ANALISANDO ---
+
+print(f'{20 * '='}')
+print('ANALISANDO ....')
+sleep(1)
 print(f'{20 * '='}')
 maior_peso = max(pesos)
 menor_peso = min(pesos)
@@ -30,6 +34,8 @@ indice_maior = pesos.index(maior_peso)
 indice_menor = pesos.index(menor_peso)
 print(f'O maior peso é {maior_peso} referente a {nomes[indice_maior]}')
 print(f'O menor peso é {menor_peso} referente a {nomes[indice_menor]}')
+
+sleep(0.8)
 
 maior_idade = max(idades)
 menor_idade = min(idades)
