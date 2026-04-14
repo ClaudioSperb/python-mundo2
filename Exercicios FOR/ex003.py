@@ -22,7 +22,4 @@ for pessoa in range(0, 3):
     print(f'Seja bem vindo {Fore.LIGHTGREEN_EX}{nome}{Fore.RESET}')
     print(f'Seu peso é de {Fore.LIGHTGREEN_EX}{peso}{Fore.RESET} Kg e sua idade é de {Fore.LIGHTGREEN_EX}{idade}{Fore.RESET} anos')
     
-print(f'Os nomes coletados foram {nomes}')
-print(f'Os pesos coletados foram {pesos}')
-print(f'As idades coletadas foram {idades}')
-
+# --- PEGANDO OS DADOS E ANALISANDO ---
