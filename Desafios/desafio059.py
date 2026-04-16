@@ -44,3 +44,4 @@ while opção != 5:
     elif opção == 5:
         print('FINALIZANDO O PROGRAMA . . .')
         sleep(1)
+print('OBRIGADO POR PARTICIPAR')
