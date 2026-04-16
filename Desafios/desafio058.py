@@ -8,12 +8,13 @@ sleep(1)
 print(f'Se o número do computador 🖥️ for diferente >>> {Fore.RED}VOCÊ PERDE 😭{Fore.RESET}')
 sleep(0.5)
 print('VAMOS COMEÇAR ....')
-numMaquina = random.randint(0, 10)
 sleep(1)
 num = 0
+numMaquina = random.randint(0, 10)
 palpites = []
 while num != numMaquina:
-    num = int(input('Digite um numero de 0 a 5: '))
+    numMaquina = random.randint(0, 10)
+    num = int(input('Digite um numero de 0 a 10: '))
     palpites.append(num)
     print(f'{50 * '='}')
     sleep(1)
