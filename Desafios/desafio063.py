@@ -1,4 +1,5 @@
 from time import sleep
+print(f'{50 * '-'}')
 print(f'{10 * '='}SEQUENCIA DE FIBONACCI{10 * '='}')
 numero = int(input('Quantos termos você quer mostrar:  '))
 print(f'{50 * '-'}')
