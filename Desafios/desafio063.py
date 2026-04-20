@@ -15,3 +15,4 @@ while cont <= numero:
     t1 = t2
     t2 = t3
     print(f' -> {t3}', end=' ')
+    
