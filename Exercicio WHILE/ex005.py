@@ -1,7 +1,8 @@
 from colorama import Fore
 from time import sleep
-print(f'{15 * '='} LOGIN / SENHA {15 * '='}')
 print(f'{50 * '='}')
+print(f'{15 * '='} LOGIN / SENHA {15 * '='}')
+print(f'{15 * '='} CLAUDIO SISTEMAS {15 * '='}')
 nome = ''
 senha = ''
 while nome != 'CLAUDIO':
