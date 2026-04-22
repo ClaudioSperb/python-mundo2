@@ -17,6 +17,7 @@ while opc != 4:
       ''')
     opc = int(input('Digite a opção desejada: '))
     if opc == 1:
+        print(f'SALDO ATUAL -> R${saldo}')
         deposito = float(input('Qual valor a ser depositado: R$ '))
         saldo += deposito
         print('Depositando...')
