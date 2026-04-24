@@ -7,7 +7,6 @@ t1 = 0
 t2 = 1
 cont = 3
 print('GERANDO SEQUENCIA >>> ')
-sleep(1)
 print(f'{t1} -> {t2}', end=' ')
 while cont <= numero:
     t3 = t1 + t2
