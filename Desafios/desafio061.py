@@ -13,7 +13,7 @@ contador = 0
 termo = n1
 
 while contador < qtd:
-    print(termo, end=' ')
+    print(f'{termo} -> ', end=' ')
     termo += n2
     contador += 1
 
