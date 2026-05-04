@@ -9,6 +9,6 @@ while numero != 999:
 soma_lista_numeros = sum(lista_numeros)
 print('ANALISANDO NÚMEROS . . .')
 sleep(1)
-print(f'Os numeros digitados foram -> {lista_numeros}')
-print(f'A soma total dos números é {soma_lista_numeros}')
+print(f'Os numeros digitados foram -> {lista_numeros}, totalizando {len(lista_numeros)} números digitados')
+print(f'A soma total dos {len(lista_numeros)} números é {soma_lista_numeros}')
 print('FIM')
