@@ -25,6 +25,6 @@ while True:
         print(f'Você escolheu [ PAR ] e o numero {numHumano} e o computador o numero {numComputador}')
         print(f'A soma dos numeros deu {soma} é ÍMPAR')
         print(f'{48 * '='}')
-        print('GAME OVER - VOCÊ PERDEU !!!! ')  
+        print('GAME OVER - VOCÊ PERDEU !!!! ')
         break
 print('FIM')
