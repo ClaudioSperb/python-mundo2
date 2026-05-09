@@ -4,19 +4,22 @@ print(f'{15 * '~'} MERCADO DO CLAUDIO {15 * '~'}')
 print('Seja Bem vindo ao nosso Mercado')
 print('')
 lista_Produtos = []
-Valores_Produtos = []
+lista_valores =[]
+Valores_Produtos = 0
+soma_produtos = 0
 while True:
     print(f'{15 * '='} PAGINA DE COMPRA {15 * '='}')
     produto = str(input('Nome do Produto: ')).title().strip()
     valor = float(input('Valor do Produto: R$'))
     res = str(input('Continuar comprando [S / N] ? ')).capitalize().strip()
+    soma_produtos += valor
     lista_Produtos.append(produto)
-    Valores_Produtos.append(valor)
+    lista_valores.append(valor)
+
     if res == 'N':
         print(f'{Fore.LIGHTRED_EX}ENCERRANDO ...{Fore.RESET}')
         sleep(1)
         break
-soma_produtos = sum(Valores_Produtos)
 print(f'{soma_produtos}')
 print(f'{lista_Produtos}')
-print(f'{Valores_Produtos}')
+print(f'{lista_valores}')
