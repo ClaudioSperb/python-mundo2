@@ -16,6 +16,7 @@ while True:
         print(f'{Fore.LIGHTRED_EX}ENCERRANDO ...{Fore.RESET}')
         sleep(1)
         break
-    
+soma_produtos = sum(Valores_Produtos)
+print(f'{soma_produtos}')
 print(f'{lista_Produtos}')
 print(f'{Valores_Produtos}')
