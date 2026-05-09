@@ -11,7 +11,7 @@ while True:
     print(f'{15 * '='} PAGINA DE COMPRA {15 * '='}')
     produto = str(input('Nome do Produto: ')).title().strip()
     valor = float(input('Valor do Produto: R$'))
-    res = str(input('Continuar comprando [S / N] ? ')).capitalize().strip()
+    res = str(input('Continuar comprando [S / N] ? ')).title().strip()
     soma_produtos += valor
     lista_Produtos.append(produto)
     lista_valores.append(valor)
