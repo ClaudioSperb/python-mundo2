@@ -6,8 +6,10 @@ pergunta = ''
 while pergunta != 'N':
     print(f'{15 * '='} CADASTRO EM ANDAMENTO {15 * '='}')
     idade = int(input('Digite sua idade: '))
+    sexo = ''
     while sexo != 'M' and sexo != 'F':
         sexo = str(input('Digite seu Sexo [F / M]: ')).upper().strip()
+    pergunta = ''
     while pergunta != 'S' and pergunta != 'N':
         pergunta = str(input('Você quer continuar [S / N]: ')).upper().strip()
 
