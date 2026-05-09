@@ -20,6 +20,7 @@ while True:
         print(f'{Fore.LIGHTRED_EX}ENCERRANDO ...{Fore.RESET}')
         sleep(1)
         break
+
 print(f'{soma_produtos}')
 print(f'{lista_Produtos}')
 print(f'{lista_valores}')
