@@ -28,10 +28,10 @@ while res != 'N':
 
     if valor > 1000:
         valor_maior += 1
-valor_barato = min(lista_valores)
 
-print(f'{valor_barato}')
+#PEGANDO OS PRODUTOS E VALORES
+valor_barato = min(zip(lista_Produtos, lista_valores))
+
 print(f'O valor total da sua compra foi de R${soma_produtos:.2f}')
 print(f'Na sua compra tem {valor_maior} produtos a cima de R$1.000,00 reais')
-print(f'{lista_Produtos}')
-print(f'{lista_valores}')
+print(f'O item mais barato da sua compra foi {valor_barato[0]}.')
