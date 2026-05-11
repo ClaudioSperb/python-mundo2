@@ -1,6 +1,7 @@
 print(f'{10 * '='} VARIOS NÚMEROS COM FLAGS {10 * '='}')
-num = res = soma = 0
-while num != 999:
+soma = 0
+num = 0
+while True:
     res = int(input('Digite um número: [<<< Digite 999 para sair >>>] '))
     if res == 999:
         break
