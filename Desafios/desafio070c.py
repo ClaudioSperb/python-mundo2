@@ -3,7 +3,7 @@ from time import sleep
 print(f'{15 * "~"} MERCADO DO CLAUDIO {15 * "~"}')
 listaValores = []
 listaProdutos = []
-ValoresMil = 0
+
 while True:
     produto = str(input('Nome do Produto: ')).title().strip()
     valor = float(input('Valor do Produto: '))
