@@ -18,9 +18,12 @@ while True:
         saida = str(input('Continuar comprando? [S / N] ')).upper().strip()[0]
     if saida == 'N':
         break
+
+
 somaCompras = sum(listaValores)
 
-print(listaProdutos)
-print(listaValores)
-print(ValoresMil)
-print(somaCompras)
+
+# print(listaProdutos)
+# print(listaValores)
+print(f'O valor total da sua compra foi de R${somaCompras:.2f}')
+print(f'No total, são {ValoresMil} produtos com valor maior que R$1000,00.')
