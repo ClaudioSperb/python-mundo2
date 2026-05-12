@@ -19,11 +19,11 @@ while True:
     if saida == 'N':
         break
 
-
+indiceBarato = listaValores.index(min(listaValores))
+produtoMaisBarato = listaProdutos[indiceBarato]
+valorMaisBarato = listaValores[indiceBarato]
 somaCompras = sum(listaValores)
 
-
-# print(listaProdutos)
-# print(listaValores)
 print(f'O valor total da sua compra foi de R${somaCompras:.2f}')
 print(f'No total, são {ValoresMil} produtos com valor maior que R$1000,00.')
+print(f'O item {produtoMaisBarato}, com valor R${valorMaisBarato:.2f} Reais, é o produto mais barato.')
