@@ -10,9 +10,12 @@ while True:
     if numero == 999:
         print(f'Saindo . . .')
         break
-    while numero < 0 or numero > 20:
+    if numero < 0 or numero > 20:
         print(f'{Fore.RED}Numero inválido{Fore.RESET}. Digite um numero de 0 a 20')
         numero = int(input('Digite um Número de 0 a 20: '))
+    if numero == 999:
+        print(f'Saindo . . .')
+        break
     print(f'Você digitou o numero {Fore.GREEN}{numeros[numero]}{Fore.RESET}')
     print(f'{50 * '='}')
 print('Obrigado por Participar !!!')
