@@ -2,7 +2,7 @@ import random
 from time import sleep
 while True:
     pergunta = str(input('Digite [0] para iniciar ou [999] para sair: '))
-    print('Iniciando . . .')
+    print('Aguarde . . .')
     sleep(1)
     if pergunta == '999':
         print('Encerrando o Programa. Aguarde . . .')
@@ -16,4 +16,5 @@ while True:
     print(f'O numero maior foi o {maior_numero}')
     print(f'{30 * '~'}')
     print(f'O menor numero foi o {menor_numero}')
+    print(f'{30 * '='}')
 print('Obrigado por Participar !!! ')
