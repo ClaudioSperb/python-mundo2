@@ -6,7 +6,7 @@ timesSerieA = ('Palmeiras', 'Flamengo', 'Fliuminense', 'Altlético Paranaense', 
 for pos,time in enumerate(timesSerieA):
     print(f'{pos + 1}º - {time}')
 print('')
-print(f'Os primeiros cinco Colocados da tabela são: {timesSerieA[0:6]}')
+print(f'Os primeiros cinco Colocados da tabela são: {timesSerieA[0:5]}')
 print(f'{136 * '~'}')
 print(f'Os quatro últimos Colocados da tabela são: {timesSerieA[-4:]}')
 print(f'{88 * '~'}')
