@@ -5,6 +5,7 @@ num1 = int(input('Digite um número: '))
 num2 = int(input('Digite outro número: '))
 num3 = int(input('Digite mais um número: '))
 num4 = int(input('Digite o último número: '))
+numeros_pares = []
 numerosPares = 0
 tupla_numeros = (num1, num2, num3, num4)
 print(f'Você digitou esses valores: {tupla_numeros}')
@@ -19,11 +20,12 @@ if num1 != 3 and num2 != 3 and num3 != 3 and num4 != 3:
 else:
     print(f'O valor 3 apareceu na {tupla_numeros.index(3) + 1}ª posição')
 
-    if num1 % 2 == 0:
-        print(num1)
-    elif num2 % 2 == 0:
-        print(num2)
-    elif num3 % 2 == 0:
-        print(num3)
-    elif num4 % 2 == 0:
-        print(num4)
+print('Os números pares digitados foram: ', end='')
+temPar = False
+for n in tupla_numeros:
+    if n % 2 == 0:
+        print(f'{n}', end=' ')
+        temPar = True
+if not temPar:
+    print('Nenhum número par foi digitado.')
+print('')
