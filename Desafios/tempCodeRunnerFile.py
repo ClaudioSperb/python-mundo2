@@ -1,2 +1,2 @@
-import random
-from time import sleep
+
+       int(input('Digite um número: ')))
