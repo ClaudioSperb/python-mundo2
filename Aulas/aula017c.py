@@ -7,3 +7,7 @@ print(valores_a)
 valores_a.sort()
 print(valores_a)
 print(len(valores)) #Começando sempre pelo indice 1
+for c in valores:
+    if 5 in valores:
+        valores.remove(5)
+print(valores)
