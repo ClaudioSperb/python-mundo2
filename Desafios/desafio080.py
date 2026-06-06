@@ -9,9 +9,3 @@ for c in range(5):
     lista_numeros.append(num)
     maior_numero = max(lista_numeros)
     menor_numero = min(lista_numeros)
-    if num > maior_numero:
-        lista_maior.insert(num, -1)
-    elif num < maior_numero:
-        lista_menor.insert(0, num)
-print(lista_maior, lista_menor)
-        
