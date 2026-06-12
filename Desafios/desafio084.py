@@ -7,24 +7,19 @@ lista_pesados = []
 lista_leves = []
 
 while True:
-    nome = str(input('Qual seu nome: '))
-    peso = float(input('Qual seu peso: '))
+    lista_usuarios.append(str(input('Qual seu nome: ')).capitalize())
+    lista_usuarios.append(float(input('Qual seu peso: ')))
     res = str(input('Quer continuar [S / N]: ')).upper().strip()
     
-    if peso >= 100 :
-        lista_pesados.append(nome)
-        lista_pesados.append(peso)
+    if lista_usuarios[1] >= 100:
+        lista_pesados.append(lista_usuarios.copy()) 
+        lista_usuarios.clear()
     else:
-        lista_leves.append(nome)
-        lista_leves.append(peso)
-        
-    lista_usuarios.append(lista_leves.copy())
-    lista_usuarios.append(lista_pesados.copy())
-    lista_leves.clear()
-    lista_pesados.clear()    
-    
+        lista_leves.append(lista_usuarios.copy())
+        lista_usuarios.clear()
         
     if res == 'N':
         print('ENCERRANDO . . .')
         break
+    
 print(lista_usuarios)
