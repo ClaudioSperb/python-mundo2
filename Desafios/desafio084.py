@@ -5,6 +5,7 @@ dados = []
 pessoa = []
 lista_leve = []
 lista_pesado = []
+pesos = []
 
 while True:
     nome = str(input('Nome: '))
@@ -13,6 +14,7 @@ while True:
     
     pessoa.append(nome)
     pessoa.append(peso)
+    pesos.append(peso)
     dados.append(pessoa.copy())
     pessoa.clear()
     
@@ -27,13 +29,21 @@ while True:
 
     if res == 'N':
         break
+maior_peso = max(pesos)
+menor_peso = min(pesos)
 
+if maior_peso in lista_pesado:
+    print(maior_peso)
+    
+if menor_peso in lista_leve:
+    print(menor_peso)
 # for p, n in enumerate(lista_leve):
 #     print(n,p)
     
 # for n, p in enumerate(lista_pesado):
 #     print(n,p)
-  
+# print(maior_peso, end=' ')
+# print(menor_peso, end=' ')
 print(f'No total, temos {len(dados)}pessoas cadastradas. ')
 print(f'Lista de pessoas a baixo de 70Kg >>>> {lista_leve}')
 print(f'Lista de pessoas a cima de 70Kg >>>> {lista_pesado}')
