@@ -28,7 +28,6 @@ while True:
     if res == 'N':
         break
 
-
 # print(f'No total, temos {len(dados)}pessoas cadastradas. ')
 # print(f'Lista de pessoas a baixo de 70Kg >>>> {lista_leve}')
 # print(f'Lista de pessoas a cima de 70Kg >>>> {lista_pesado}')
