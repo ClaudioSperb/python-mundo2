@@ -1,3 +1,6 @@
+from colorama import Fore
+from time import sleep
+
 print(40 * '=')
 print(f'LISTAGEM DE PESOS'.center(40))
 print(40 * '=')
@@ -28,23 +31,25 @@ while True:
         
     
     if res == 'N':
+        print('FINALIZANDO PROGRAMA . . .')
+        sleep(1)
         break
     
 menor = min(peso_leve)
 maior = max(peso_pesado)
-
+print(40 * '=')
 #Pegando o nome e o menor peso da lista principal
 print(f'A pessoa com menor peso foi', end=' ')
 for n in dados:
     if menor == n[1]:
-        print(f'[{n[0]}]', end=' ')
+        print(f'{Fore.LIGHTGREEN_EX}[{n[0]}]{Fore.RESET}', end=' ')
 print(f'com {menor}Kg')
 
 #Pegando o nome e o maior peso da lista principal
-print(f'A pessoa com menor peso foi', end=' ')
+print(f'A pessoa com maior peso foi', end=' ')
 for n in dados:
     if maior == n[1]:
-        print(f'[{n[0]}]', end=' ')
+        print(f'{Fore.LIGHTRED_EX}[{n[0]}]{Fore.RESET}', end=' ')
 print(f'com {maior}Kg')
-
+print(40 * '=')
 print(f'No total, temos {len(dados)} pessoas cadastradas. ')
