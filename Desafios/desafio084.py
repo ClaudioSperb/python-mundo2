@@ -37,6 +37,7 @@ while True:
     
 menor = min(peso_leve)
 maior = max(peso_pesado)
+    
 print(40 * '=')
 #Pegando o nome e o menor peso da lista principal
 print(f'A pessoa com menor peso foi', end=' ')
