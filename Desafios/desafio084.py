@@ -3,12 +3,12 @@ print(f'LISTAGEM DE PESOS'.center(40))
 print(40 * '=')
 dados = []
 pessoa = []
-lista_leve = []
-lista_pesado = []
-pesos = []
+peso_leve = []
+peso_pesado = []
+
 
 while True:
-    nome = str(input('Nome: '))
+    nome = str(input('Nome: ')).upper()
     peso = float(input('Peso: '))
     res = str(input('Quer continuar [S / N]? ')).upper().strip()
     
@@ -17,17 +17,34 @@ while True:
     dados.append(pessoa.copy())
     pessoa.clear()
     
+    #Adicionando os pesos nas listas conforme a condição
+    # peso > 70 - lista - peso_pesado
+    # peso <= 70 - lista - peso_leve
     
-    if peso <= 70:
-        lista_leve.append(nome)
-        lista_leve.append(peso)
+    if peso > 70:
+        peso_pesado.append(peso)
     else:
-        lista_pesado.append(nome)
-        lista_pesado.append(peso)
+        peso_leve.append(peso)
         
+    
     if res == 'N':
         break
+    
+menor = min(peso_leve)
+maior = max(peso_pesado)
 
-# print(f'No total, temos {len(dados)}pessoas cadastradas. ')
-# print(f'Lista de pessoas a baixo de 70Kg >>>> {lista_leve}')
-# print(f'Lista de pessoas a cima de 70Kg >>>> {lista_pesado}')
+#Pegando o nome e o menor peso da lista principal
+print(f'A pessoa com menor peso foi', end=' ')
+for n in dados:
+    if menor == n[1]:
+        print(f'[{n[0]}]', end=' ')
+print(f'com {menor}Kg')
+
+#Pegando o nome e o maior peso da lista principal
+print(f'A pessoa com menor peso foi', end=' ')
+for n in dados:
+    if maior == n[1]:
+        print(f'[{n[0]}]', end=' ')
+print(f'com {maior}Kg')
+
+print(f'No total, temos {len(dados)} pessoas cadastradas. ')
