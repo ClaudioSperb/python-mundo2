@@ -8,6 +8,7 @@ print(40 * '=')
 lista_1 = []
 lista_2 = []
 lista_3 = []
+
 #LINHA 1
 for n in range(1):
     num1 = int(input('Digite um número para a posição [0, 0]: '))
@@ -38,3 +39,4 @@ for n in range(1):
 print(lista_1)
 print(lista_2)
 print(lista_3)
+    
