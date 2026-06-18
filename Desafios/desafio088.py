@@ -10,11 +10,12 @@ todos_os_palpites = []
 palpites = []
 res = int(input('Quantos palpites voce quer criar: '))
 print(40 * '=')
-print('GERANDO PALPITES . . .')
+print(f'GERANDO PALPITES . . .')
 sleep(0.3)
-print('Aguarde..')
+print(f'{Fore.RED}Aguarde...{Fore.RESET}')
 sleep(1)
 print(f'{res} Palpites solicitados >>>> ')
+print(25 * '~')
 for c in range(res):
     while len(palpites) < 6:
         numero = randint(1, 60)
@@ -25,5 +26,7 @@ for c in range(res):
     palpites.clear()
 for c in todos_os_palpites:
     sleep(0.5)
-    print(c)
+    print(f'{Fore.GREEN}{c}{Fore.RESET}')
     print(25 * '~')
+
+print(f'{10 * '='} < MEGA-SENA > {10 * '='}'.center(40))
