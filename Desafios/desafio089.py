@@ -21,8 +21,7 @@ while True:
 print(40 * '=')
 print(f'< BOLETIM ESCOLAR >'.center(40))
 print(40 * '=')
-print(f'Nº NOME                 MEDIA')
+print(f'{"Nº.":<4}{"NOME":<10}{"MÉDIA":>8}')
 for p , n in enumerate(lista_geral):
-    print(f'{p} {n[0]} {n[2]:>18}')
-    print(35 * '=')
-    
+    print(f'{p:<4}{n[0]:<10}{n[2]:>8.1f}')
+    print(30 * '-')
