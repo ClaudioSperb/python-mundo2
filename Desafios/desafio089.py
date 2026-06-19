@@ -5,7 +5,7 @@ print(40 * '=')
 lista_geral = []
 
 while True:
-    nome = str(input('Nome: ')).capitalize().strip()
+    nome = str(input('Nome: ')).upper().strip()
     nota_1 = float(input('Nota 1: '))
     nota_2 = float(input('Nota 2: '))
     res = str(input('Quer continuar [S / N]: ')).capitalize().strip()
@@ -18,8 +18,9 @@ while True:
     
     if res == 'N':
         break
-    
-
+print(40 * '=')
+print(f'< BOLETIM ESCOLAR >'.center(20))
+print(f'Nº NOME         MEDIA')
 for p , n in enumerate(lista_geral):
-    print(p, n[0], n[2])
+    print(f'{p} {n[0]} {n[2]:>10}')
     
