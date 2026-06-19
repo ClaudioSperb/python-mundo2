@@ -19,8 +19,10 @@ while True:
     if res == 'N':
         break
 print(40 * '=')
-print(f'< BOLETIM ESCOLAR >'.center(20))
-print(f'Nº NOME         MEDIA')
+print(f'< BOLETIM ESCOLAR >'.center(40))
+print(40 * '=')
+print(f'Nº NOME                 MEDIA')
 for p , n in enumerate(lista_geral):
-    print(f'{p} {n[0]} {n[2]:>10}')
+    print(f'{p} {n[0]} {n[2]:>18}')
+    print(35 * '=')
     
