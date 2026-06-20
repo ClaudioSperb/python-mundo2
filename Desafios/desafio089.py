@@ -1,3 +1,6 @@
+from time import sleep
+from colorama import Fore
+
 print(40 * '=')
 print(f'< BOLETIM ESCOLAR >'.center(40))
 print(40 * '=')
@@ -30,5 +33,11 @@ while True:
     aluno = int(input('Mostrar notas de qual aluno [ 999 ] para sair]: '))
     if aluno == 999:
         break
+    print(40 * '~')
     print(f'Notas de {lista_geral[aluno][0]} são {lista_geral[aluno][1]}')
     print(40 * '~')
+print('FINALIZANDO . . .')
+sleep(1)
+print(40 * '=')
+print(f'< FIM DO PROGRAMA - VOLTE SEMPRE >'.center(40))
+print(40 * '=')
