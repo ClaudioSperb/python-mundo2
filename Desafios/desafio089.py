@@ -28,8 +28,7 @@ for p , n in enumerate(lista_geral):
 
 while True:
     aluno = int(input('Mostrar notas de qual aluno [ 999 ] para sair]: '))
-    for n, a in enumerate(dados_alunos):
-        if n == aluno:
-            print(f'A nota do alunoª {dados_alunos[0]} >>> {dados_alunos[1]}')
     if aluno == 999:
         break
+    print(f'Notas de {lista_geral[aluno][0]} são {lista_geral[aluno][1]}')
+    print(40 * '~')
