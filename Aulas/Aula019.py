@@ -6,6 +6,8 @@ dados = dict(
 )
 
 print('=-' * 30)
+print(f'O funcionário {dados["nome"]} tem {dados["idade"]} anos de idade e pesa {dados["peso"]}Kg.')
+print('=-' * 30)
 
 print(dados.keys()) # Pega somente as Keys (chaves)
 print(dados.items()) # Pega tudo que tem no dicionario
