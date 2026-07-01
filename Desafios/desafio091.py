@@ -15,19 +15,19 @@ jogadores = {
     'jogador3': num3,
     'jogador4': num4
 }
-for c in range(1):
-    numeros.append(jogadores.copy())
+
+numeros.append(num1)
+numeros.append(num2)
+numeros.append(num3)
+numeros.append(num4)
+
 
 for k, v in jogadores.items():
     print(f'O {k} tirou {v}')
-    sleep(1)
-numeros.sort()
+    sleep(0.5)
+    
 print('=-' * 20)
+
 print('RANKING DOS JOGADORES')
-
-for c, v in enumerate(numeros):
-    print(c, v)
-
-
-
+numeros.sort()
 
