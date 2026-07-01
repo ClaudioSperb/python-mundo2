@@ -1,14 +1,11 @@
-print('Adicionando direto em listas dentro do Dicionário')
-# Inicializamos o dicionário já com as chaves e listas vazias
-estados = {
-    'uf': [],
-    'sigla': []
+print('DADOS FILMES')
+filmes = {
+    "titulo": 'Mortal Kombat - o Filme',
+    "diretor": 'Paul W.S. Anderson',
+    "ano": 1995
 }
-
-for c in range(3):
-    # Dá um .append() direto na lista interna correspondente à chave
-    estados['uf'].append(str(input('UF: ')).upper())
-    estados['sigla'].append(str(input('Sigla: ')).upper())
-
-print("\nDicionário final:")
-print(estados)
+print(filmes)
+filmes["tema"] = 'Ação / Aventura'
+print(filmes)
+del filmes['titulo']
+print(filmes)
