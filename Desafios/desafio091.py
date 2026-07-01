@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+from operator import itemgetter
 
 print('JOGO DOS NUMEROS')
 print('=-' * 20)
@@ -16,11 +17,6 @@ jogadores = {
     'jogador4': num4
 }
 
-numeros.append(num1)
-numeros.append(num2)
-numeros.append(num3)
-numeros.append(num4)
-
 
 for k, v in jogadores.items():
     print(f'O {k} tirou {v}')
@@ -29,5 +25,8 @@ for k, v in jogadores.items():
 print('=-' * 20)
 
 print('RANKING DOS JOGADORES')
-numeros.sort()
 
+ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
+for c, v in enumerate(ranking):
+    print(f'O {c + 1}º Lugar: {v}')
+    sleep(0.5)
