@@ -11,6 +11,7 @@ num3 = randint(1, 6)
 num4 = randint(1, 6)
 
 jogadores = {
+    
     'jogador1': num1,
     'jogador2': num2,
     'jogador3': num3,
