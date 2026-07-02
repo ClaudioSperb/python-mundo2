@@ -32,5 +32,5 @@ print(30 * '-')
 
 print(f'O jogador {estatisticas_jogador['nome']} jogou {estatisticas_jogador['partidas']} Partidas.')
 for k, v in enumerate(gols):
-    print(f'Na partida {k + 1}, {estatisticas_jogador['nome']} fez {v} gols')
+    print(f'     => Na partida {k + 1}, {estatisticas_jogador['nome']} fez {v} gols')
 print(f'No total, {estatisticas_jogador['nome']} fez {estatisticas_jogador["total_de_gols"]} gols.')
