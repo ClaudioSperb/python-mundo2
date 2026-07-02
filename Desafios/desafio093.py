@@ -20,15 +20,15 @@ estatisticas_jogador['total_gols_jogador'] = gols.copy()
 estatisticas_jogador['total_de_gols'] = sum(gols)
 
 
-print(30 * '-=')
+print(50 * '-=')
 print(estatisticas_jogador)
-print(30 * '-=')
+print(50 * '-=')
 print()
 
-print(30 * '-')
+print(50 * '-')
 for k, v in estatisticas_jogador.items():
     print(f'No campo {k} temos o valor {v}')
-print(30 * '-')
+print(50 * '-')
 
 print(f'O jogador {estatisticas_jogador['nome']} jogou {estatisticas_jogador['partidas']} Partidas.')
 for k, v in enumerate(gols):
