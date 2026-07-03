@@ -12,13 +12,13 @@ while True:
     if estatisticas_jogador['partidas'] > 0:
         for c in range(estatisticas_jogador['partidas']):
             estatisticas_jogador['gols_na_partida'] = int(input(f'Quantos gols na {c + 1}ª partida: '))
-            jogadores.append(estatisticas_jogador.copy())
 
          
             
     res = str(input('Quer continuar? S / N ')).upper()
     if res == 'N':
         break
+    
 print(estatisticas_jogador)
 print(jogadores)
     
