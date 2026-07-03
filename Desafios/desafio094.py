@@ -19,4 +19,11 @@ while True:
         print('Finalizando . . .')
         break
     
+#Pegando o tamanho da lista
+tot_pessoas = len(lista_geral)
+
+#Somando as idades totais da lista geral
+
+print(tot_pessoas)
 print(lista_geral)
+
