@@ -18,4 +18,5 @@ while True:
     if res == 'N':
         print('Finalizando . . .')
         break
+    
 print(lista_geral)
