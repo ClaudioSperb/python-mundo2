@@ -2,20 +2,21 @@ print(30 * '=')
 print(f'CADASTROS'.center(30))
 print(30 * '=')
 
-cadastro_geral = {}
-pessoa = []
+cadastro_geral = []
+pessoa = dict()
+
 
 while True:
-    pessoa.append(str(input('Nome: ')).upper())
-    pessoa.append(str(input('Sexo: ')).upper())
-    pessoa.append(int(input('Ano Nascimento: ')))
-    cadastro_geral['pessoa'] = pessoa.copy()
+    pessoa['nome'] = (str(input('Nome: ')).upper().strip())
+    pessoa['sexo'] = (str(input('Sexo: ')).upper().strip())
+    pessoa['ano_nascimento'] = (int(input('Ano Nascimento: ')))
+    res = str(input('Quer continuar [S / N]: ')).upper().strip()
     
-    res = str(input('Quer continuar [S / N]: ')).upper()
+    cadastro_geral.append(pessoa.copy())
     
     
     if res == 'N':
         break
-    
-print()
+print('=-' * 30)
 print(cadastro_geral)
+print('=-' * 30)
