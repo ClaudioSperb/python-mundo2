@@ -36,3 +36,15 @@ for k, v in enumerate(time):
         print(f'{str(d):<15}', end='')
     print()
 print('-' * 40)
+while True:
+    busca = int(input('Mostrar dados de qual jogador?  [ 999 para sair ] '))
+    if busca == 999:
+        break
+    if busca >= len(time):
+        print(f'ERRO! Não existe jogador com o códico {busca}')
+    else:
+        print(f'LEVANTAMENTO DO JOGADOR {time[busca]["nome"]}')
+        for i, g in enumerate(time[busca]['gols']):
+            print(f'    No jogo {i + 1} fez {g} gols')
+        print('-' * 40)
+print('<< FIM DO PROGRAMA >>')
