@@ -1,28 +1,38 @@
+from time import sleep
 print(30 * '=')
 print(f'ESTATÍSTICAS DE UM JOGADOR'.center(30))
 print(30 * '=')
 
-estatisticas_jogador = dict()
-jogadores = list()
-
-#Pegando os nomes dos jogadores
+jogador = {}
+partidas = []
+time = []
 while True:
-    estatisticas_jogador['nome'] = str(input('Nome do jogador: ')).upper().strip()
-    estatisticas_jogador['partidas'] = int(input(f'Quantas partidas {estatisticas_jogador["nome"]} jogou: '))
-    if estatisticas_jogador['partidas'] > 0:
-        for c in range(estatisticas_jogador['partidas']):
-            estatisticas_jogador['gols_na_partida'] = int(input(f'Quantos gols na {c + 1}ª partida: '))
-            jogadores.append(estatisticas_jogador['gols_na_partida'])
-    jogadores.append(estatisticas_jogador['nome'])
-            
-
-    res = str(input('Quer continuar? S / N ')).upper()
-    if res == 'N':
+    jogador.clear()
+    jogador['nome'] = str(input('Nome do jogador: ')).capitalize()
+    tot = int(input(f'Quantas partidas {jogador["nome"]} Jogou: '))
+    partidas.clear()
+    for c in range(tot):
+        partidas.append(int(input(f'Gols na partida {c + 1}: ')))
+        
+    jogador['gols'] = partidas.copy()
+    jogador['total'] = sum(partidas)
+    time.append(jogador.copy())
+    while True:
+        resp = str(input('Quer continuar [S / N]: ')).upper()[0]
+        if resp in 'SN':
+            break
+        print('ERRO! Responda apenas S ou N.')
+    if resp == 'N':
         break
-    
-print(estatisticas_jogador)
-print('')
-print(jogadores)
-    
-    
-            
+print('=-' * 30)
+print('cod ', end='')
+for i in jogador.keys():
+    print(f'{i:<15}', end='')
+print()
+print('-' * 40)
+for k, v in enumerate(time):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+    print()
+print('-' * 40)
