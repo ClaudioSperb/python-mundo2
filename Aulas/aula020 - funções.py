@@ -1,10 +1,11 @@
-def area(x, y):
-    a = x * y
-    print(f'A área total é {a}')
+def area_triangulo(x, y, z):
+    a = (x * y) / z
+    print(f'A área total do triângulo é {a}')
 
-x = float(input('Digite o valor da base: '))
-y = float(input('Digite o valor da altura: '))
+x = float(input('Digite o valor: '))
+y = float(input('Digite o valor: '))
+z = float(input('Digite o valor: '))
 
-print(f'Voce digitou {x} e {y}.', end=' ')
+print(f'Voce digitou {x}, {y} e {z}.', end=' ')
 
-area(x, y)
+area_triangulo(x, y, z)
