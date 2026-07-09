@@ -3,6 +3,12 @@ def area_triangulo(x, y, z):
     print('=-' * 30)
     print(f'A área total do triângulo é {a}'.center(60))
     print('=-' * 30)
+    
+def fim_programa():
+    print('-=' * 30)
+    print(f'FIM DO PROGRAMA'.center(60))
+    print('-=' * 30)
+    
 while True:
     x = float(input('Digite o valor para X: '))
     y = float(input('Digite o valor para Y: '))
@@ -14,3 +20,4 @@ while True:
 
     if res == 'N':
         break
+fim_programa()
