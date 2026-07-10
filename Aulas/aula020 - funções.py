@@ -1,21 +1,26 @@
-def area_triangulo(x, y, z):
-    a = (x * y) / z
+def soma(a, b):
+
+
+
+    s = a + b
     print('=-' * 30)
-    print(f'A área total do triângulo é {a}'.center(60))
+    print(f'A soma dos valores digitados é {s}'.center(60))
     print('=-' * 30)
     
 def mensagem(msg):
+
+
+
     print('-=' * 30)
     print(f'{msg}'.center(60))
     print('-=' * 30)
-    
+
+lista_resultados = []
 while True:
-    x = float(input('Digite o valor para X: '))
-    y = float(input('Digite o valor para Y: '))
-    z = float(input('Digite o valor para Z: '))
+    a = float(input('Digite o valor para A: '))
+    b = float(input('Digite o valor para B: '))
     
-    area_triangulo(x, y, z)
-    
+    soma(a, b)
     res = str(input('Quer continuar: S / N ')).upper()[0]
 
     if res == 'N':
