@@ -27,5 +27,7 @@ maior(nums)
 
 nums = []
 if not nums:
+    print('Analisando os valores passados...')
     print('Nenhum numero encontrado')
+    print('O maior numero é 0')
 
