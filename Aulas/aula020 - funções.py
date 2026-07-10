@@ -4,9 +4,9 @@ def area_triangulo(x, y, z):
     print(f'A área total do triângulo é {a}'.center(60))
     print('=-' * 30)
     
-def fim_programa():
+def mensagem(msg):
     print('-=' * 30)
-    print(f'FIM DO PROGRAMA'.center(60))
+    print(f'{msg}'.center(60))
     print('-=' * 30)
     
 while True:
@@ -20,4 +20,4 @@ while True:
 
     if res == 'N':
         break
-fim_programa()
+mensagem('FIM DO PROGRAMA')
