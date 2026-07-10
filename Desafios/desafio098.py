@@ -1,4 +1,5 @@
 from time import sleep
+from colorama import Fore
 
 def titulo(palavra):
     tam = len(palavra)
@@ -11,19 +12,19 @@ def contador_1():
     c = 1
     for c in range(1, 11):
         print(c, end='  ')
-        sleep(0.5)
+        sleep(0.3)
         c += 1
     print(' -> FIM')   
 def contador_2():
     c = 0
     for c in range(10, -2, -2):
         print(c, end='  ')
-        sleep(0.5)
+        sleep(0.3)
     print(' -> FIM')
 def contagem_personalizada(inicio, fim, passo):
     if passo == 0:
         passo = 1
-        print('[ ATENÇÃO ] - Nao existe o passo 0 ! Automaticamente adicionado passo 1.')
+        print(f'{Fore.RED}[ ATENÇÃO ]{Fore.RESET} - Nao existe o passo 0 ! Automaticamente adicionado passo 1.')
     if fim < inicio:
         for c in range(inicio, fim - passo, - passo):
             print(c, end='  ')
