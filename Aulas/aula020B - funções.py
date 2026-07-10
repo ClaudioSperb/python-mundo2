@@ -8,7 +8,7 @@ def contador(* num):
     print(f'Recebi os valores {num} e são ao todo {tam} números.')
 
 
-    
+
 mensagem('EMPACOTAMENTO NO PYTHON')
 
 contador(1,2,3,4,5)
