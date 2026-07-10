@@ -21,10 +21,14 @@ def contador_2():
         sleep(0.5)
     print(' -> FIM')
 def contagem_personalizada(inicio, fim, passo):
-    for c in range(inicio, fim + passo, passo):
-        print(c, end='  ')
-        c += passo
-        sleep(0.3)
+    if fim < inicio:
+        for c in range(inicio, fim - passo, - passo):
+            print(c, end='  ')
+            sleep(0.3)
+    else:
+        for c in range(inicio, fim + passo, passo):
+            print(c, end='  ')
+            sleep(0.3)
     print(' => FIM')
 
 contador_1()
@@ -38,4 +42,7 @@ i = int(input('Inicio: '))
 f = int(input('Fim: '))
 p = int(input('Passo: '))
 
+if p == 0:
+    p = 1
+    
 contagem_personalizada(i, f, p)
