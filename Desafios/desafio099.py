@@ -25,6 +25,9 @@ maior(nums)
 nums = [2, 8]
 maior(nums)
 
+nums = [3]
+maior(nums)
+
 nums = []
 if not nums:
     print('Analisando os valores passados...')
