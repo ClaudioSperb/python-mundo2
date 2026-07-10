@@ -44,5 +44,5 @@ p = int(input('Passo: '))
 
 if p == 0:
     p = 1
-    
+    print('[ ATENÇÃO ] - Nao existe o passo 0 ! Automaticamente adicionado passo 1.')
 contagem_personalizada(i, f, p)
