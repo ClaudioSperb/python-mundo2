@@ -21,6 +21,9 @@ def contador_2():
         sleep(0.5)
     print(' -> FIM')
 def contagem_personalizada(inicio, fim, passo):
+    if passo == 0:
+        passo = 1
+        print('[ ATENÇÃO ] - Nao existe o passo 0 ! Automaticamente adicionado passo 1.')
     if fim < inicio:
         for c in range(inicio, fim - passo, - passo):
             print(c, end='  ')
@@ -42,7 +45,5 @@ i = int(input('Inicio: '))
 f = int(input('Fim: '))
 p = int(input('Passo: '))
 
-if p == 0:
-    p = 1
-    print('[ ATENÇÃO ] - Nao existe o passo 0 ! Automaticamente adicionado passo 1.')
+
 contagem_personalizada(i, f, p)
