@@ -14,9 +14,9 @@ def sorteio():
     for c in range(5):
         num = randint(0, 5)
         numeros.append(num)
-    print('Sorteando 5 numeros => ', end=' ')
+    print('Sorteando 5 numeros => ', end=' ', flush=True)
     for c in numeros:
-        print(c, end=' ')
+        print(c, end=' ', flush=True)
         sleep(0.3)
     print('')
 sorteio()

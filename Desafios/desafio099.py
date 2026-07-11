@@ -8,7 +8,7 @@ titulo('PASSANDO NUMEROS E PEGANDO O MAIOR')
 
 def maior(lista):
     for c in lista:
-        print(c, end=' ')
+        print(c, end=' ', flush=True)
         sleep(0.5)
     
     print('\nAnalisando os valores passados...')

@@ -5,6 +5,12 @@ print(f'{'CONTAGEM'}'.center(40))
 print(20 * '-=')
 
 def contador(i, f, p):
+    
+    if p == 0:
+        p = 1
+    if p < 0:
+        p *= -1
+        
     print(f'Contagem de {i} até {f} de {p} em {p}')
     
     if i < f:
