@@ -21,11 +21,11 @@ def sorteio():
     print('')
 sorteio()
 
-def par():
+def somapar():
     tot = 0
     for n in numeros:
         if n % 2 == 0:
             tot += n
     print(f'Na lista {numeros} a soma dos pares é {tot}')   
-par()
+somapar()
 print('=-' * 30)
