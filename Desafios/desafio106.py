@@ -39,7 +39,7 @@ while True:
 
     titulo('SISTEMA DE CONSULTAS DO PYTHON', 2)
 
-    print(c[5], end='')
+    print(c[0], end='')
     comando = str(input('Digite a Função ou Biblioteca: ')).strip().lower()
     print(c[0], end='')
     if comando.upper() == 'FIM':
