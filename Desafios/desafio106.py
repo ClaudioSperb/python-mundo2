@@ -9,7 +9,7 @@ c = (
     '\033[0;30;43m',  # 3 - Fundo Amarelo
     '\033[0;30;44m',  # 4 - Fundo Azul
     '\033[0;30;45m',  # 5 - Fundo Roxo
-    '\033[7;30m'      # 6 - Fundo Branco (Invertido)
+    '\033[30;47m'      # 6 - Fundo Branco (Invertido)
 )
 
 def titulo(palavra, cor=0):
@@ -27,7 +27,8 @@ def titulo(palavra, cor=0):
     sleep(0.5)
 
 def helpPython(comando):
-    titulo(f'Acessando o manual do comando \'{comando}\'')
+    titulo(f'Acessando o manual do comando \'{comando}\'', 4)
+    print(c[6], end='')
     help(comando)
     print(c[0], end='')
     sleep(0.5)
@@ -35,9 +36,12 @@ def helpPython(comando):
 #PROGRAMA PRINCIPAL
 comando = ''
 while True:
+
     titulo('SISTEMA DE CONSULTAS DO PYTHON', 2)
-    
+
+    print(c[5], end='')
     comando = str(input('Digite a Função ou Biblioteca: ')).strip().lower()
+    print(c[0], end='')
     if comando.upper() == 'FIM':
         print('FINALIZANDO CONSULTAS...')
         sleep(0.3)
