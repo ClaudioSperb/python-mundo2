@@ -1,6 +1,7 @@
 from time import sleep
 
 # Lista/Tupla de cores ANSI
+
 c = (
     '\033[0m',        # 0 - Sem cor (Reset)
     '\033[0;30;41m',  # 1 - Fundo Vermelho
