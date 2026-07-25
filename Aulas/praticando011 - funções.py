@@ -1,16 +1,24 @@
-#PRATICANDO FUNÇÕES
-def saudacao(msg):
-   return f'Ola {msg}, seja bem vindo!'
+cadastro_geral = []
 
-def maior_menor(num):
-    if num >= 18:
-        return f'Você tem {num} anos. É maior de idade!'
-    else:
-        return f'Voce tem {num} anos. É menor de idade!'
+def cadastro(nome, idade, lista_destino):
+    pessoa = dict(nome=nome, idade=idade)
+
+    # Adiciona a pessoa diretamente na lista que passamos
+    lista_destino.append(pessoa)
 
 #Programa Principal
-nome = str(input('Digite seu nome: '))
-print(saudacao(nome))
+while True:
+    nome = str(input('Nome: ')).strip().upper()
+    idade = int(input('Idade: '))
 
-num = int(input(f'Digite sua idade {nome}: '))
-print(maior_menor(num))
+    # Chama a função DENTRO do loop a cada pessoa digitada
+    cadastro(nome, idade, lista_destino=cadastro_geral)
+
+    res = str(input('Quer continuar [S/N]: ')).strip().upper()
+    if res == 'N':
+        print('Finalizando Cadastro...')
+        break
+
+# Exibe o resultado final
+print("📋 Lista final cadastrada:")
+print(cadastro_geral)
