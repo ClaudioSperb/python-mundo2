@@ -1,8 +1,8 @@
-from uteis import fatorial, dobro, triplo, titulo
+import uteis
 
-titulo('MODULOS E PACOTES')
+uteis.titulo('MODULOS E PACOTES')
 num = int(input('Digite um valor: '))
-fat = fatorial(num)
+fat = uteis.fatorial(num)
 print(f'O Fatorial de {num} é {fat}')
-print(f'O dobro de {num} é {dobro(num)}')
-print(f'O triplo de {num} é {triplo(num)}')
+print(f'O dobro de {num} é {uteis.dobro(num)}')
+print(f'O triplo de {num} é {uteis.triplo(num)}')
