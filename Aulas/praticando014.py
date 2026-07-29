@@ -26,3 +26,4 @@ def vogais(texto):
 palavra = str(input('Digite uma palavra: ')).lower().strip()
 total = vogais(palavra)
 print(f'\nTemos {total} vogais no total')
+titulo('FIM DO PROGRAMA')
