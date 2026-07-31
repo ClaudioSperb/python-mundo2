@@ -12,8 +12,3 @@ def dobro(n):
 def triplo(n):
     return n * 3
 
-def titulo(msg):
-    tam = len(msg)
-    print('=-' * tam)
-    print(msg.center(tam * 2))
-    print('=-' * tam)
