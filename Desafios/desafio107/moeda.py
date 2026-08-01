@@ -1,11 +1,18 @@
 def metade(num):
-    return num / 2
+    res = num / 2
+    return res
+
 
 def dobro(num):
-    return num * 2
+    res = num * 2
+    return res
+
 
 def aumentar(num, porc):
-    return num + (num * porc) / 100
+    res = num + (num * porc) / 100
+    return res
+
 
 def diminuir(num, porc):
-    return num - (num * porc) / 100
+    res = num - (num * porc) / 100
+    return res
