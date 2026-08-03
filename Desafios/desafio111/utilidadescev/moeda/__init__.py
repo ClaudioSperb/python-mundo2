@@ -1,6 +1,3 @@
-from pickle import TRUE
-
-
 def metade(num=0, formato=False):
 
     '''
