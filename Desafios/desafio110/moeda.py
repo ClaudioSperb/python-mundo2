@@ -1,3 +1,6 @@
+from pickle import TRUE
+
+
 def metade(num=0, formato=False):
 
     '''
@@ -58,3 +61,19 @@ def moeda(num=0, moeda='R$'):
     '''
 
     return f'{moeda}{num:.2f}'.replace('.', ',')
+
+
+def titulo(msg):
+    tam = len(msg)
+    print('=====' * tam)
+    print(msg.center(tam * 5))
+    print('=====' * tam)
+
+def resumo(num, taxaa=10, taxadim=5):
+    titulo('RESUMO')
+    print(f'Valor Analisado: \t{moeda(num)}')
+    print(f'Dobro do Valor: \t{dobro(num, True)}')
+    print(f'Metade do Valor: \t{metade(num, True)} ')
+    print(f'{taxaa}% de Aumento: \t{aumentar(num, taxaa, True)}')
+    print(f'{taxadim}% de Redução: \t{diminuir(num, taxadim, True)}')
+    print('-' * 30)

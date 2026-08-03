@@ -1,5 +1,3 @@
-from pickle import TRUE
-
 from Desafios.desafio109 import moeda
 
 num = float(input('Digite o preço: R$'))
