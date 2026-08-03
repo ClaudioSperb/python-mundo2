@@ -1,6 +1,3 @@
-from django.db.models.signals import pre_delete
-
-
 def metade(num=0, formato=False):
     res = num / 2
     return res if formato is False else moeda(res)
