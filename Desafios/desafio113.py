@@ -1,25 +1,37 @@
 from colorama import Fore
 
-def leiaInt(msg):
+
+def validando_numero_inteiro(msg):
     while True:
         try:
-            n1 = int(input(msg))
-        except Exception as erro:
+            n = int(input(msg))
+        except InterruptedError:
+            print('O Usuário não informou um dos valores solicitados')
+        except(TypeError, ValueError):
             print(f'{Fore.LIGHTRED_EX}[ERRO]: Por favor digite um valor inteiro válido{Fore.RESET}')
+        except KeyboardInterrupt:
+            print(f'{Fore.RED}Usuario nao informou algum dos campos do sistema!{Fore.RESET}')
+            return 0
         else:
-            print(f'O valor inteiro digitado foi {n1}')
-            break
+            return n
 
-def leiaFloat(msg):
+
+def validando_numero_real(msg):
     while True:
         try:
-            n1 = float(input(msg))
-        except Exception as erro:
+            n = float(input(msg))
+        except InterruptedError:
+            print('O Usuário nao informou um dos valores solicitados')
+        except (TypeError, ValueError):
             print(f'{Fore.LIGHTRED_EX}[ERRO]: Por favor digite um valor Real válido{Fore.RESET}')
+        except KeyboardInterrupt:
+            print(f'{Fore.RED}Usuario nao informou algum dos campos do sistema!{Fore.RESET}')
+            return 0
+
         else:
-            print(f'O valor real  digitado foi {n1}')
-            break
+            return n
 
 
-leiaInt('Digite um numero inteiro: ')
-leiaFloat('Digite um numero real: ')
+n1 = validando_numero_inteiro('Digite um numero inteiro: ')
+n2 = validando_numero_real('Digite um numero real: ')
+print(f'O valor inteiro é {n1} e o valor real é {n2}')
