@@ -1,9 +1,10 @@
+import urllib
 import urllib.request
 import urllib.error
 from colorama import Fore
 
 try:
-    site = urllib.request.urlopen('http://pudim.com.br/')
+    site = urllib.request.urlopen('http://facebook.com/')
 except urllib.error.URLError:
     print(f'{Fore.RED}O site não está acessível no momento.{Fore.RESET}')
 else:
