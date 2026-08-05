@@ -1,6 +1,5 @@
 from colorama import Fore
 
-
 def validando_numero_inteiro(msg):
     while True:
         try:
@@ -27,7 +26,6 @@ def validando_numero_real(msg):
         except KeyboardInterrupt:
             print(f'{Fore.RED}Usuario nao informou algum dos campos do sistema!{Fore.RESET}')
             return 0
-
         else:
             return n
 
