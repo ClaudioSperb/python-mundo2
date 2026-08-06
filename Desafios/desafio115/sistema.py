@@ -12,4 +12,4 @@ while True:
         break
     else:
         print(f'\033[31m[ERRO]! - Digite uma opção válida!\033[m')
-    sleep(2)
+    sleep(1)
