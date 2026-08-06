@@ -1,4 +1,6 @@
 from colorama import Fore
+
+
 def validando_numero_inteiro(msg):
     while True:
         try:
@@ -13,8 +15,10 @@ def validando_numero_inteiro(msg):
         else:
             return n
 
+
 def linha(tam=42):
     return '=' * tam
+
 
 def cabecalho(txt):
     print(linha())
