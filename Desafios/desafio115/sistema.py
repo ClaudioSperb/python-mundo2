@@ -9,7 +9,7 @@ while True:
         cabecalho('Opção 2 - \033[34mNOVO CADASTRO\033[m')
     elif resposta == 3:
         cabecalho('Encerrando o Sistema - Volte Sempre!')
+        sleep(1)
         break
     else:
         print(f'\033[31m[ERRO]! - Digite uma opção válida!\033[m')
-    sleep(1)
