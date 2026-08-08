@@ -12,4 +12,4 @@ while True:
         sleep(1)
         break
     else:
-        print(f'\033[31m[ERRO]! - Digite uma opção válida!\033[m')
+        cabecalho(f'\033[31m[ERRO]! - Digite uma opção válida!\033[m'.center(48))

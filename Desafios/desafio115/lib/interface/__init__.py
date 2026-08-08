@@ -6,11 +6,11 @@ def validando_numero_inteiro(msg):
         try:
             n = int(input(msg))
         except InterruptedError:
-            print('O Usuário não informou um dos valores solicitados')
+            cabecalho('O Usuário não informou um dos valores solicitados')
         except(TypeError, ValueError):
-            print(f'{Fore.LIGHTRED_EX}[ERRO]: Por favor digite um valor inteiro válido{Fore.RESET}')
+            cabecalho(f'{Fore.LIGHTRED_EX}[ERRO]: Por favor digite um valor inteiro válido{Fore.RESET}')
         except KeyboardInterrupt:
-            print(f'{Fore.RED}Usuario nao informou algum dos campos do sistema!{Fore.RESET}')
+            cabecalho(f'{Fore.RED}Usuario nao informou algum dos campos do sistema!{Fore.RESET}')
             return 0
         else:
             return n
