@@ -1,10 +1,19 @@
 from Desafios.desafio115.lib.interface import *
+from Desafios.desafio115.lib.arquivo import *
 from time import sleep
+
+arq = 'arquivo_cadastro.txt'
+if not validando_arquivo(arq):
+    criar_arquivo(arq)
 
 while True:
     resposta = menu(['Relatorio de Cadastro', 'Novo Cadastro' ,'Sair do Sistema'])
+
     if resposta == 1:
         cabecalho('Opção 1 - \033[34mRELATÓRIO DE CADASTRO\033[m')
+        #Opção de mostrar os dados do arquivo.
+        relatorio_arquivo(arq)
+
     elif resposta == 2:
         cabecalho('Opção 2 - \033[34mNOVO CADASTRO\033[m')
     elif resposta == 3:
