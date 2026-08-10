@@ -29,4 +29,4 @@ def relatorio_arquivo(nome):
     except:
         print('ERRO ao ler o arquivo!')
     else:
-        cabecalho(a.readlines())
+        cabecalho(a.read())
