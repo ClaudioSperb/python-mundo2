@@ -10,12 +10,15 @@ while True:
     resposta = menu(['Relatorio de Cadastro', 'Novo Cadastro' ,'Sair do Sistema'])
 
     if resposta == 1:
-        cabecalho('Opção 1 - \033[34mRELATÓRIO DE CADASTRO\033[m')
-        #Opção de mostrar os dados do arquivo.
+        sleep(1)
         relatorio_arquivo(arq)
+        sleep(2)
 
     elif resposta == 2:
         cabecalho('Opção 2 - \033[34mNOVO CADASTRO\033[m')
+        nome = str(input('Nome:')).title()
+        idade = validando_numero_inteiro('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
         cabecalho('Encerrando o Sistema - Volte Sempre!')
         sleep(1)
