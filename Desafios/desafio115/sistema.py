@@ -1,5 +1,6 @@
 from Desafios.desafio115.lib.interface import *
 from Desafios.desafio115.lib.arquivo import *
+from colorama import Fore
 from time import sleep
 
 arq = 'arquivo_cadastro.txt'
